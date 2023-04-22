@@ -5,6 +5,7 @@ import CH2ClassProps from "./CH2ClassProps";
 import CH2FuncState from "./CH2FuncState";
 import CH2FuncProps from "./CH2FuncProps";
 import CH2Event from "./CH2Event";
+import CH2CreateDOM from "./CH2CreateDOM";
 
 function CH2() {
   let name = "Kwonsang";
@@ -20,6 +21,7 @@ function CH2() {
   return (
     <div>
       <h1 className="title">Chapter 2</h1>
+      <CH2CreateDOM /> <hr />
       <CH2Event /> <hr />
       <CH2FuncProps name={name} changeName={changeName} nickname={nickname} setNickname={setNickname} age={age} setAge={setAge} arr={arr} user={user}>
         <div>This is a children of CH2FuncProps.</div>
