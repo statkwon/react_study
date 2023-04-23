@@ -3,7 +3,7 @@ import React, { Component } from "react";
 let name = "Kwonsang";
 const changeName = (newName) => (name = newName);
 
-export class CH2ClassState extends Component {
+export class CH3ClassState extends Component {
   constructor() {
     super();
     /* 1. constructor 메서드를 사용하여 state를 설정하는 방식
@@ -52,7 +52,7 @@ export class CH2ClassState extends Component {
   render() {
     return (
       <div>
-        <h2>CH2ClassState</h2>
+        <h2>CH3ClassState</h2>
         <div>
           Name: {name} <br />
           Nickname: {this.state.nickname} <br />
@@ -79,4 +79,4 @@ export class CH2ClassState extends Component {
   }
 }
 
-export default CH2ClassState;
+export default CH3ClassState;

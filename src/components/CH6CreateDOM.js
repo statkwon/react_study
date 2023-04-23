@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-function CH2CreateDOM() {
+function CH6CreateDOM() {
   const cnt = useRef(4);
   const addRef = useRef(null);
   const [arr, setArr] = useState(["두산", "SSG", "삼성"]);
@@ -39,7 +39,7 @@ function CH2CreateDOM() {
 
   return (
     <div>
-      <h2>CH2CreateDOM</h2>첫 번째 팀: {data.teamOne}
+      <h2>CH6CreateDOM</h2>첫 번째 팀: {data.teamOne}
       <select name="teamOne" className="form-control" onChange={changeTeam}>
         <option value="default">팀을 선택하세요</option>
         {arr.map((value) => (
@@ -89,4 +89,4 @@ function CH2CreateDOM() {
   );
 }
 
-export default CH2CreateDOM;
+export default CH6CreateDOM;

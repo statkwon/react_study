@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-export class CH2ClassProps extends Component {
+export class CH3ClassProps extends Component {
   render() {
     const { name, changeName, nickname, setNickname, age, setAge, arr, user, x, children } = this.props;
     return (
       <div>
-        <h2>CH2ClassProps</h2>
+        <h2>CH3ClassProps</h2>
         {children}
         <div>
           Name: {name} <br />
@@ -25,7 +25,7 @@ export class CH2ClassProps extends Component {
   }
 }
 
-CH2ClassProps.propTypes = {
+CH3ClassProps.propTypes = {
   name: PropTypes.string.isRequired,
   changeName: PropTypes.func,
   nickname: PropTypes.string,
@@ -36,8 +36,8 @@ CH2ClassProps.propTypes = {
   user: PropTypes.object,
 };
 
-CH2ClassProps.defaultProps = {
+CH3ClassProps.defaultProps = {
   x: 0,
 };
 
-export default CH2ClassProps;
+export default CH3ClassProps;

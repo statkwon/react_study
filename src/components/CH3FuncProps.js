@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function CH2FuncProps(props) {
+function CH3FuncProps(props) {
   const { name, changeName, nickname, setNickname, age, setAge, arr, user, x, children } = props;
   return (
     <div>
-      <h2>CH2FuncProps</h2>
+      <h2>CH3FuncProps</h2>
       {children}
       <div>
         Name: {name} <br />
@@ -23,7 +23,7 @@ function CH2FuncProps(props) {
   );
 }
 
-CH2FuncProps.propTypes = {
+CH3FuncProps.propTypes = {
   name: PropTypes.string.isRequired,
   changeName: PropTypes.func,
   nickname: PropTypes.string,
@@ -34,8 +34,8 @@ CH2FuncProps.propTypes = {
   user: PropTypes.object,
 };
 
-CH2FuncProps.defaultProps = {
+CH3FuncProps.defaultProps = {
   x: 0,
 };
 
-export default CH2FuncProps;
+export default CH3FuncProps;

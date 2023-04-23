@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CH2Event() {
+function CH4Event() {
   const [data, setData] = useState({
     name: "Kwonsang",
     age: 26,
@@ -31,7 +31,7 @@ function CH2Event() {
 
   return (
     <div>
-      <h2>CH2Event</h2>
+      <h2>CH4Event</h2>
       <form>
         Name: {data.name}
         {/* onChange 이벤트가 발생하면 SyntheticEvent 객체가 실행되는 함수의 첫 번째 인자로 전달된다. */}
@@ -129,4 +129,4 @@ function CH2Event() {
   );
 }
 
-export default CH2Event;
+export default CH4Event;

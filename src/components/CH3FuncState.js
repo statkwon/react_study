@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CH2FuncState() {
+function CH3FuncState() {
   // 함수 컴포넌트에서는 useState라는 Hook을 사용하여 state variable을 정의한다.
   // 함수 컴포넌트에서 forceUpdate() 메서드를 사용하는 방법?
   let name = "Kwonsang";
@@ -24,7 +24,7 @@ function CH2FuncState() {
 
   return (
     <div>
-      <h2>CH2FuncState</h2>
+      <h2>CH3FuncState</h2>
       <div>
         Name: {name} <br />
         Nickname: {nickname} <br />
@@ -48,4 +48,4 @@ function CH2FuncState() {
   );
 }
 
-export default CH2FuncState;
+export default CH3FuncState;
