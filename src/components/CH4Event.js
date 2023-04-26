@@ -31,6 +31,7 @@ function CH4Event() {
 
   return (
     <div>
+      <h1 className="title">Chapter 4</h1>
       <h2>CH4Event</h2>
       <form>
         Name: {data.name}

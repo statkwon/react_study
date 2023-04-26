@@ -39,6 +39,7 @@ function CH6CreateDOM() {
 
   return (
     <div>
+      <h1 className="title">Chapter 6</h1>
       <h2>CH6CreateDOM</h2>첫 번째 팀: {data.teamOne}
       <select name="teamOne" className="form-control" onChange={changeTeam}>
         <option value="default">팀을 선택하세요</option>
