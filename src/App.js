@@ -8,6 +8,7 @@ import CH8 from "./components/CH8";
 import CH9 from "./components/CH9";
 import CH10 from "./components/CH10";
 import CH13 from "./components/CH13";
+import CH14 from "./components/CH14";
 import { NavLink, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -46,6 +47,10 @@ function App() {
       <NavLink to="/CH13" style={({ isActive }) => (isActive ? style : undefined)}>
         CH13
       </NavLink>
+      {" | "}
+      <NavLink to="/CH14" style={({ isActive }) => (isActive ? style : undefined)}>
+        CH14
+      </NavLink>
       <hr />
       <Routes>
         {/* <Route path="주소규칙" element={보여 줄 컴포넌트 JSX} /> */}
@@ -58,6 +63,7 @@ function App() {
         <Route path="/CH9" element={<CH9 />} />
         <Route path="/CH10" element={<CH10 />} />
         <Route path="/CH13/*" element={<CH13 />} />
+        <Route path="/CH14" element={<CH14 />} />
       </Routes>
     </div>
   );
