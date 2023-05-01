@@ -43,7 +43,6 @@ function CH14Axios() {
       <h2>CH14Axios</h2>
       <button onClick={addContact}>Add</button>
       <button onClick={getContactList}>Data List</button>
-      <button>Data List Async</button>
       <button onClick={() => getContact(1682598771034)}>Get</button>
       <button onClick={() => updateContact(1682598771034)}>Update</button>
       <button onClick={() => deleteContact(1682598771034)}>Delete</button>
