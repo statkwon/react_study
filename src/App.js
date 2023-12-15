@@ -11,6 +11,7 @@ import CH13 from './components/CH13';
 import CH14 from './components/CH14';
 import CH16 from './components/CH16';
 import './components/css/Style.css';
+import CH15 from './components/CH15';
 
 function App() {
   const style = { color: 'blue', fontWeight: 'bold' };
@@ -53,6 +54,10 @@ function App() {
         CH14
       </NavLink>
       {' | '}
+      <NavLink to="/CH15" style={({ isActive }) => (isActive ? style : undefined)}>
+        CH15
+      </NavLink>
+      {' | '}
       <NavLink to="/CH16" style={({ isActive }) => (isActive ? style : undefined)}>
         CH16
       </NavLink>
@@ -69,6 +74,7 @@ function App() {
         <Route path="/CH10" element={<CH10 />} />
         <Route path="/CH13/*" element={<CH13 />} />
         <Route path="/CH14" element={<CH14 />} />
+        <Route path="/CH15" element={<CH15 />} />
         <Route path="/CH16" element={<CH16 />} />
       </Routes>
     </div>
